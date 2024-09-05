@@ -1,0 +1,162 @@
+body{
+    /* margin: auto; */
+    margin: 0px;
+    background-color: #d9b6ca;
+}
+a{
+    text-decoration: none;
+}
+/* header section */
+header{
+    height: 60px;
+    /* border: 5px solid hotpink; */
+    background-color: #3b2632;
+
+}
+#brand{
+    float: left;
+    color: white;
+    font-size: 30px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#social{
+    float: right;
+}
+.sociallogo{
+    height: 50px;
+
+}
+
+/* contents */
+#content{
+    width: 80%;
+    height: 600px;
+    display: flex;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+#imgDiv{
+    height: 400px;
+    width: 40%;
+    border: 8px solid #3b2632;
+}
+#imgDiv> img{
+    height: 100%;
+    width: 100%;
+}
+#contentDiv{
+    height: 550px;
+    width: 47%;
+    margin-left: 5%;
+    margin-top: -2%;
+}
+.feature_Container{
+    display: flex;
+}
+figure{
+    margin-left: 5%;
+}
+.featureIcon{
+    height: 100px;
+    width: 100px;
+}
+
+
+/* footer section */
+footer{
+    /* height: 120px; */
+    /* border: 5px groove green; */
+    background-color: #3b2632;
+    color: white;
+    text-align: center;
+
+}
+.footText{
+    font-size: 20px;
+}
+.footDiv{
+    display: inline-block;
+    width: 32%;
+    border-right: 2px solid white;
+}
+.noBorder{
+    border: none;
+}
+ul{
+    list-style-type: none;
+}
+@media screen and (max-width:1300px){
+    body{
+        background-color: blue;
+    }
+    #heading{
+        margin-left: 20%;
+        margin-top: 18%;
+    }
+    .dropdown{
+        margin-top: 28%;
+    }
+    
+}
+@media screen and (max-width:1200px){
+    body{
+        background-color: aqua;
+    }
+    #heading{
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+    .dropdown{
+        margin-top: 30%;
+    }
+}
+@media screen and (max-width:1000px){
+    body{
+        background-color: beige;
+    }
+    .tileContainer{
+        width: 45%;
+    }
+    #heading{
+        margin-left: 12%;
+        margin-top: 22%;
+
+    }
+    .dropdown{
+        margin-top: 34%;
+    }
+}
+@media screen and (max-width:800px){
+    body{
+        background-color: #B8860B;
+    }
+    #heading{
+        margin-left: 2%;
+        margin-top: 22%;
+
+    }
+    .dropdown{
+        margin-top: 36%;
+        width: 92%;
+        margin-left: 3%;
+    }
+
+}
+@media screen and (max-width:500px){
+    body{
+        background-color: #d9b6ca;
+    }
+    .tileContainer{
+        width: 100%;
+    }
+    #heading{
+        margin-left: 0%;
+        margin-top: 32%;
+
+    }
+    .dropdown{
+        margin-top: 62%;
+        width: 96%;
+    }
+}

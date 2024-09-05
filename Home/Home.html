@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <title>Tomato </title>
+        <link href="image/drinks.png" rel="icon"/>
+        <link href="Home.css" rel="stylesheet">
+        <script src="Home.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <div id="brand">
+                Tomato!
+
+            </div>
+            <div id="social">
+                <a href="">
+                    <img src="https://i.ibb.co/QYQxPzb/facebook.png" alt="fblogo" class="sociallogo"/>
+                </a>
+               
+                <a href="">
+                    <img src="https://i.ibb.co/VgHyPMJ/insta.png" alt="fblogo" class="sociallogo"/>
+                </a>
+                
+                <a href="">
+                    <img src="https://i.ibb.co/rMZxD0v/youtube1.png" alt="fblogo" class="sociallogo"/>
+                </a>
+                
+
+            </div>
+        </header>
+        <div id="search">
+            <div class="logo">
+               <span>T!</span>
+            </div>
+            <div id="heading">
+                Find Best Place Near You
+            </div>
+            <div class="dropdown">
+                <select id="city" onchange="getRest()">
+                    <option>---SELECT YOUR CITY---</option>
+                </select>
+                <select id="restSelect">
+                    <option>---Select YOUR RESTAURANTS---</option>
+                </select>
+
+            </div>
+        </div>
+        <div id="quickSearch">
+           <span class="QuickHeading">Quick search</span>
+           <span class="QuickSubHeading">Find Restaurant by Meal Type</span>
+           <div class="mainBox">
+             <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="./image/dinner.png" alt="dinner"/>
+                </div>
+                <div class="tileComponent2">
+                    <div class="compHeading">
+                        <a href="../listing/listing.html">BreakFast</a>
+                    </div>
+                    <div class="compSubHeading">
+                        Best Deals For Breakfast
+                    </div>
+                </div>
+             </div>
+             <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="./image/drinks.png" alt="dinner"/>
+                </div>
+                <div class="tileComponent2">
+                    <div class="compHeading">
+                        <a href="../listing/listing.html">Drinks</a>
+                    </div>
+                    <div class="compSubHeading">
+                        Best Deals For Breakfast
+                    </div>
+                </div>
+                
+             </div>
+             <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="./image/lunch.png" alt="dinner"/>
+                </div>
+                <div class="tileComponent2">
+                    <div class="compHeading">
+                        <a href="../listing/listing.html">Meals</a>
+                    </div>
+                    <div class="compSubHeading">
+                        Best Deals For Breakfast
+                    </div>
+                </div>
+                
+             </div>
+             <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="./image/Coffee.jpg" alt="dinner"/>
+                </div>
+                <div class="tileComponent2">
+                    <div class="compHeading">
+                        <a href="../listing/listing.html">Party</a>
+                    </div>
+                    <div class="compSubHeading">
+                        Best Deals For Breakfast
+                    </div>
+                </div>
+                
+             </div>
+             <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="./image/sacks.png" alt="dinner"/>
+                </div>
+                <div class="tileComponent2">
+                    <div class="compHeading">
+                        <a href="../listing/listing.html">Lunch</a>
+                    </div>
+                    <div class="compSubHeading">
+                        Best Deals For Breakfast
+                    </div>
+                </div>
+                
+             </div>
+             <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="./image/dinner1.jpg" alt="dinner"/>
+                </div>
+                <div class="tileComponent2">
+                    <div class="compHeading">
+                        <a href="../listing/listing.html">Dinner</a>
+                    </div>
+                    <div class="compSubHeading">
+                        Best Deals For Breakfast
+                    </div>
+                </div>
+                
+             </div>
+             
+           </div>
+        </div>
+        
+        <footer>
+            <hr/>
+            <p class="footText">&copy; Sanjit Developer</p>
+            <hr/>
+            <div class="footDiv">
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    
+                </ul>
+            </div>
+            <div class="footDiv">
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    
+                </ul>
+            </div>
+            <div class="footDiv noBorder">
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    
+                </ul>
+            </div>
+           
+            <div id="">
+                <a href="">
+                    <img src="https://i.ibb.co/QYQxPzb/facebook.png" alt="fblogo" class="sociallogo"/>
+                </a>
+                <a href="">
+                    <img src="https://i.ibb.co/VgHyPMJ/insta.png" alt="fblogo" class="sociallogo"/>
+                </a>
+                <a href="">
+                    <img src="https://i.ibb.co/rMZxD0v/youtube1.png" alt="fblogo" class="sociallogo"/>
+                </a>
+
+            </div>
+        </footer>
+        <script>
+            window.onload = getCity;
+        </script>
+        
+
+    </body>
+</html>
