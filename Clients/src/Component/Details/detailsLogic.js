@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Link, useSearchParams, useNavigate } from 'react-router-dom';
 import Header from '../Header';
 
-const base_url = "http://localhost:9120";
+const base_url = "https://tomapi1.onrender.com";
 
 const DetailDisplay = () => {
     let navigate = useNavigate();

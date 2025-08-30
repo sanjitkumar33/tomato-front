@@ -7,7 +7,7 @@ import CuisineFilter from '../Filters/cuisineFilter';
 import CostFilter from '../Filters/costFilter';
 import Header from '../Header';
 
-const base_url = "http://localhost:9120";
+const base_url = "https://tomapi1.onrender.com";
 
 
 const Listing = () => {

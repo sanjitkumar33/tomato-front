@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import './Search.css';
 
-const base_url = "http://localhost:9120";
+const base_url = "https://tomapi1.onrender.com";
 
 const Search = () => {
     const [location,setLocation] = useState('')

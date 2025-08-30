@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-const url = "";
+const url = "https://tomapi1.onrender.com/filter/1?hcost=1000&lcost=500";
 
 const CostFilter = (props) => {
 

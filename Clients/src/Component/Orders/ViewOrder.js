@@ -3,7 +3,7 @@ import axios from 'axios';
 import DisplayOrder from './DisplayOrder';
 import Header from '../Header';
 
-const url = "http://localhost:9120/orders";
+const url = "https://tomapi1.onrender.com/orders";
 
 const ViewOrder = () => {
     const [orders, setOrder] = useState([]);

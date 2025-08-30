@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-const url = "";
+const url = "https://tomapi1.onrender.com/filter/4?cuisine=1";
 
 const CuisineFilter = (props) => {
 
