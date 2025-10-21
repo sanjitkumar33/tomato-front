@@ -9,7 +9,7 @@ import PlaceOrder from './Orders/PlaceOrder';
 import ViewOrder from './Orders/ViewOrder';
 import Login from './login/loginComponent';
 import Register from './login/registerComponent';
-import MobileOTP from './login/mobileotp';
+
 
 const Routing = () => {
     return(
@@ -25,7 +25,7 @@ const Routing = () => {
                             <Route path="viewOrder" element={<ViewOrder/>}/>
                             <Route path="login" element={<Login/>}/>
                             <Route path="register" element={<Register/>}/>
-                            <Route path="mobileotp" element={<MobileOTP/>}/>
+                            
                         </Route>
                 </Routes>
             <Footer/>
