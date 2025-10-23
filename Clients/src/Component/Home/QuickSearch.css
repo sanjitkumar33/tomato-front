@@ -93,3 +93,7 @@
     font-size: 20px;
     color: gray;
 }
+/* responsive side start */
+@media (max-width: 500px) {
+    
+}

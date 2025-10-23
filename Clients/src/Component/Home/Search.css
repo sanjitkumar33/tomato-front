@@ -75,3 +75,11 @@ select{
 #restSelect{
     width: 59%;
 }
+/* responsive side start */
+@media (max-width: 500px) {
+    .dropdown{
+        margin-top: 80%;
+        width: 100%;
+        margin-left: 0%;
+    }
+}
