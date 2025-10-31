@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './Header.css';
 
-const url = "http://localhost:9142/api/auth/userInfo"
+const url = "http://localhost:9120/api/auth/userInfo"
 
 const Header = () => {
 
@@ -47,25 +47,28 @@ const Header = () => {
         if (userData && userData.name) {
             return (
                 <>
-                    <Link to="register" className='btn btn-primary'>
+                    <Link to="" className='btn btn-primary'>
                         <span className="glyphicon glyphicon-user"></span> Hi {userData.name}
                     </Link> &nbsp;
                     <button onClick={handleLogout} className='btn btn-danger'>
                         <span className="glyphicon glyphicon-log-out"></span> Logout
                     </button>
                 </>
+
             )
         }
 
         return (
-            <>
-                <Link to="register" className='btn btn-primary'>
+           <>
+                <Link to="/register" className="btn btn-primary">
                     <span className="glyphicon glyphicon-user"></span> Sign Up
-                </Link> &nbsp;
-                <Link to="login" className='btn btn-success'>
+                </Link>{" "}
+                &nbsp;
+                <Link to="/login" className="btn btn-success">
                     <span className="glyphicon glyphicon-log-in"></span> Login
                 </Link>
             </>
+
         )
     }
 

@@ -42,7 +42,7 @@ const Login = () => {
     if (!validate()) return;
 
     try {
-      const response = await fetch("http://localhost:9142/api/auth/login", {
+      const response = await fetch("http://localhost:9120/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

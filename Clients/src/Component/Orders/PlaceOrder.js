@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Header from '../Header';
 
 
-const url = "http://localhost:9120/placeOrder";
+const url = "https://tomapi1.onrender.com/placeOrder";
 
 
 const PlaceOrder = () => {
