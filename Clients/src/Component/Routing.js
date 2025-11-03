@@ -9,13 +9,16 @@ import PlaceOrder from './Orders/PlaceOrder';
 import ViewOrder from './Orders/ViewOrder';
 import Login from './login/loginComponent';
 import Register from './login/registerComponent';
+import ScrollToTop from "./scrollToTop";
 
 
 const Routing = () => {
     return(
         <div>
           <BrowserRouter>
+          <ScrollToTop />
                 <Routes>
+                    
                         <Route path="/" element={<Main/>}>
                             <Route index element={<Home/>}/>
                             <Route path="home" element={<Home/>}/>
