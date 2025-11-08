@@ -93,7 +93,30 @@
     font-size: 20px;
     color: gray;
 }
-/* responsive side start */
-@media (max-width: 500px) {
-    
+/* start responsive */
+@media only screen and (max-width: 600px) {
+    #quickSearch{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .tileContainer{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+        height: auto;
+    }
+    .tileComponent1, .tileComponent2{
+        width: 100%;
+        float: none;
+        margin: 0%;
+    }
+    .tileComponent1> img{
+        height: auto;
+    }
+    .compHeading{
+        font-size: 20px;
+    }
+    .compSubHeading{
+        font-size: 16px;
+    }
 }

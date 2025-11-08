@@ -31,3 +31,16 @@ header{
     height: 50px;
 
 }
+/* responsive part start */
+@media only screen and (max-width: 600px) {
+    #brand{
+        font-size: 20px;
+        margin-top: 3%;
+    }
+    #social{
+        margin-top: 3%;
+    }
+    .sociallogo{
+        height: 30px;
+    }
+}

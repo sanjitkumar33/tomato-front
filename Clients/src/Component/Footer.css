@@ -91,16 +91,23 @@
   font-size: 14px;
   color: #aaa;
 }
-
-/* 📱 Responsive Design */
-@media (max-width: 768px) {
+/* start responsive */
+@media only screen and (max-width: 600px) {
   .footer-top {
     flex-direction: column;
     align-items: center;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-social {
+    flex: 1 1 100%;
     text-align: center;
   }
 
   .social-icons {
-    margin-top: 10px;
+    justify-content: center;
   }
 }
+
+
