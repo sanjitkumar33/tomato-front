@@ -78,8 +78,17 @@ select{
 /* responsive side start */
 @media (max-width: 500px) {
     .dropdown{
-        margin-top: 80%;
+        margin-top: 65%;
         width: 100%;
         margin-left: 0%;
     }
+    #heading {
+    font-size: 35px;
+    margin-left: 15%;
+    margin-top: 50%;
+    }
+    .logo{
+        margin-top: 15%;
+    }
+   
 }
