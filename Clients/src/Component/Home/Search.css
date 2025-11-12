@@ -95,14 +95,14 @@ select{
     }
     #heading{
         font-size: 30px;
-        margin-left: 20%;
-        margin-top: 12%;
+        margin-left: 16%;
+        margin-top: 30%;
     }
     .dropdown{
         height: 40px;
         width: 70%;
         margin-left: 15%;
-        margin-top: 18%;
+        margin-top: 40%;
     }
     select{
         height: 40px;
