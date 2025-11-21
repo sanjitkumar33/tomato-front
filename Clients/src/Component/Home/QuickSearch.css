@@ -95,28 +95,52 @@
 }
 /* start responsive */
 @media only screen and (max-width: 600px) {
-    #quickSearch{
+
+    /* Main Section */
+    #quickSearch {
         width: 100%;
-        margin-left: 0%;
+        margin-left: 0;
+        padding: 0 10px;        /* reduces edge-to-edge tightness */
+        box-sizing: border-box;
     }
-    .tileContainer{
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 5%;
+
+    /* Tile Container */
+    .tileContainer {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        box-sizing: border-box;
         height: auto;
+        display: block;
     }
-    .tileComponent1, .tileComponent2{
+
+    /* Tile Components Stack Vertically */
+    .tileComponent1,
+    .tileComponent2 {
         width: 100%;
         float: none;
-        margin: 0%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-    .tileComponent1> img{
-        height: auto;
+
+    /* Images Expand Automatically */
+    .tileComponent1 > img {
+        width: 100%;     /* full width image */
+        height: auto;    /* maintain aspect ratio */
+        border-radius: 8px; /* optional clean look */
     }
-    .compHeading{
+
+    /* Heading Text Adjustment */
+    .compHeading {
         font-size: 20px;
+        line-height: 24px;
+        text-align: center;
     }
-    .compSubHeading{
+
+    .compSubHeading {
         font-size: 16px;
+        line-height: 20px;
+        text-align: center;
     }
 }

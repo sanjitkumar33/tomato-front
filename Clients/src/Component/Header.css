@@ -2,7 +2,7 @@ body{
     /* margin: auto; */
     margin: 0px;
     /* background-color: #d9b6ca; */
-    background-color: #F5DEB3;
+    background-color: #FAFAD2;
 }
 a{
     text-decoration: none;
@@ -32,15 +32,41 @@ header{
 
 }
 /* responsive part start */
+@media only screen and (max-width: 1400px) {
+    body{
+    background-color: #F5F5DC
+}
+    
+}
+@media only screen and (max-width: 1200px) {
+    body{
+    background-color: #BDB76B
+}
+}
+
+@media only screen and (max-width: 1000px) {
+    body{
+        background-color: #DAA520;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+        background-color: #808000;
+    }
+}
+
 @media only screen and (max-width: 600px) {
+    body{
+        background-color: #FFDAB9;
+    }
     #brand{
-        font-size: 20px;
-        margin-top: 3%;
-    }
-    #social{
-        margin-top: 3%;
-    }
-    .sociallogo{
-        height: 30px;
-    }
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+#social{
+    margin-top: 3%;
+    margin-right: 2%;
+}
 }

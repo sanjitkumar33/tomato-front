@@ -77,5 +77,20 @@ select{
 }
 /* start responsive */
 @media screen and (max-width: 1400px) {
+    #heading{
+    font-size: 30px;
+    margin-left: 15%;
+    margin-top: 65%;
+}
+   .dropdown{
+    height: 60px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 48%;
+    position: absolute;
+}
+   .logo{
+    margin-top: 10%;
+   }
    
 }
