@@ -53,3 +53,19 @@ body{
 #Atoc{
     background-color:green
 }
+@media only screen and (max-width: 600px) {
+
+    .tileImage,
+    .tileContent {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    .imageClass > img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: block; /* prevents unwanted gaps */
+    }
+}
