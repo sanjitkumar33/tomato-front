@@ -43,36 +43,72 @@ const DetailDisplay = () => {
         return (
             <>
                 <Header/>
-                <div className='tileImage'>
-                    <div className='imageClass'>
-                        <img src={restDetails.restaurant_thumb}
-                            alt={restDetails.restaurant_name} />
-                    </div>
-                </div>
-                <div className='tileContent'>
-                    <div className='content'>
-                        <h1>{restDetails.restaurant_name}</h1>
-                        <span id="cfeedback">231 Customers Rating Average</span>
-                        <h3>Old Price <del>Rs. 450</del></h3>
-                        <h3>Offer Price Rs. {restDetails.cost}</h3>
-                        <h3>Best Taste of Fresh Chai with Samosa At your Door or DineIn</h3>
-                        <div>
-                            <div className="icons">
-                                <img src="https://i.ibb.co/wJvrhYg/veg.png" alt="Veg" />
+                        <div className="detailsContainer">
+                            <div className='tileImage'>
+                                <div className='imageClass'>
+                                    <img
+                                        src={restDetails.restaurant_thumb}
+                                        alt={restDetails.restaurant_name}
+                                    />
+                                </div>
                             </div>
-                            <div className="icons">
-                                <img src="https://i.ibb.co/mD3jpgc/sentizied.png" alt="Sanitized" />
+
+                            <div className='tileContent'>
+                                <div className='content'>
+                                    <h1>{restDetails.restaurant_name}</h1>
+
+                                    <span id="cfeedback">
+                                        ⭐ 231 Customers Rating Average
+                                    </span>
+
+                                    <h3>
+                                        Old Price <del>Rs. 450</del>
+                                    </h3>
+
+                                    <h2 className="offerPrice">
+                                        Offer Price Rs. {restDetails.cost}
+                                    </h2>
+
+                                    <p className="description">
+                                        Best Taste of Fresh Chai with Samosa At your Door or DineIn
+                                    </p>
+
+                                    <div className="iconWrapper">
+                                        <div className="icons">
+                                            <img
+                                                src="https://i.ibb.co/wJvrhYg/veg.png"
+                                                alt="Veg"
+                                            />
+                                        </div>
+
+                                        <div className="icons">
+                                            <img
+                                                src="https://i.ibb.co/mD3jpgc/sentizied.png"
+                                                alt="Sanitized"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr />
+
+                                <div className="buttonGroup">
+                                    <Link
+                                        className="btn btn-danger"
+                                        to={`/listing/${mealId}`}
+                                    >
+                                        Back
+                                    </Link>
+
+                                    <button
+                                        className='btn btn-success'
+                                        onClick={proceed}
+                                    >
+                                        Proceed
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <hr />
-                    <div className="col-md-12">
-                        <Link className="btn btn-danger"
-                            to={`/listing/${mealId}`}>Back</Link>&nbsp;&nbsp;
-                        <button className='btn btn-success'
-                            onClick={proceed}>Proceed</button>
-                    </div>
-                </div>
             </>
         );
     };

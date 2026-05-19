@@ -32,16 +32,37 @@ const Listing = () => {
     return(
         <>
         <Header/>
-            <div className='row' id='rowone'>
-                <div id='mainListing'>
-                    <div id='filter'>
-                        <CuisineFilter mealId={mealid}
-                        restPerCuisine={(data) => {setDataPerFilter(data)}}/>
-                        <CostFilter mealId={mealid}
-                        restPerCost={(data) => {setDataPerFilter(data)}}/>
+            <div className='container-fluid'>
+                    <div className='row' id='rowone'>
+
+                        {/* Filter Section */}
+                        <div className='col-lg-3 col-md-4 col-12' id='filter'>
+                            
+                            <div className='filterBox'>
+                                <h3 className='filterHeading'>Filters</h3>
+
+                                <CuisineFilter
+                                    mealId={mealid}
+                                    restPerCuisine={(data) => {
+                                        setDataPerFilter(data)
+                                    }}
+                                />
+
+                                <CostFilter
+                                    mealId={mealid}
+                                    restPerCost={(data) => {
+                                        setDataPerFilter(data)
+                                    }}
+                                />
+                            </div>
+                        </div>
+
+                        {/* Listing Section */}
+                        <div className='col-lg-9 col-md-8 col-12' id='mainListing'>
+                            <ListingDisplay listData={restList} />
+                        </div>
+
                     </div>
-                    <ListingDisplay listData={restList}/>
-                </div>
             </div>
             
         </>
